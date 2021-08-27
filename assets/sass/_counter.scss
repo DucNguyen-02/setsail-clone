@@ -25,3 +25,17 @@
         font-weight: 600;
     }
 }
+
+@include maxWidth(739px) {
+    .counter {
+        &-list {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-item {
+            margin-bottom: 40px;
+        }
+    }
+}

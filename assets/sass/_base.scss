@@ -72,3 +72,10 @@ body {
         line-height: 28px;
     }
 }
+@include maxWidth(739px) {
+    .heading {
+        &-title {
+            font-size: 35px;
+        }
+    }
+}

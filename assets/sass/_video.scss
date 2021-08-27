@@ -41,3 +41,11 @@
         filter: brightness(80%);
     }
 }
+
+@include maxWidth(739px) {
+    .video {
+        &-content {
+            width: 100%;
+        }
+    }
+}

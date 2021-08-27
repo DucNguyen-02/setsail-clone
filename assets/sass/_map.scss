@@ -90,3 +90,9 @@
     font-size: 25px;
     cursor: pointer;
 }
+
+@include maxWidth(739px) {
+    .map {
+        display: none;
+    }
+}

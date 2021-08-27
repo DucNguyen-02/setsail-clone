@@ -67,3 +67,39 @@
         text-align: justify;
     }
 }
+
+@include maxWidth(739px) {
+    .review {
+        background-attachment: unset;
+        background-size: 100% 100%;
+        & img {
+            max-width: unset;
+            margin-bottom: 30px;
+            width: 140px;
+        }
+
+        &-img {
+            margin: 0 auto;
+            padding-right: 0;
+        }
+
+        &-item {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &-desc {
+            width: 80%;
+            text-align: center;
+        }
+
+        &-item {
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        &-comment {
+            text-align: center;
+        }
+    }
+}

@@ -85,3 +85,15 @@
     border-radius: 50%;
     list-style-type: none;
 }
+
+@include maxWidth(739px) {
+    .hero {
+        &-item {
+            margin: 0;
+        }
+
+        &-desc {
+            min-width: 100%;
+        }
+    }
+}

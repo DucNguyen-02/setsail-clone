@@ -53,3 +53,22 @@
         color: #777;
     }
 }
+
+@include maxWidth(739px) {
+    .about {
+        &-list {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+        }
+
+        &-desc {
+            width: 80%;
+        }
+
+        &-item {
+            max-width: 300px;
+        }
+    }
+}

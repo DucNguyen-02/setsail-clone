@@ -16,6 +16,7 @@ function showSlides() {
     slides[slideIndex].style.display = 'block'
     slides[slideIndex].classList.add('scale')
 }
+
 function start() {
     showSlides()
     timeOut = setTimeout(start, 5000)

@@ -27,14 +27,22 @@ modalContainer.onclick = function (e) {
 }
 
 const heading = document.querySelector('.header')
-document.onscroll = function () {
-    if (window.scrollY >= 3300) count()
-    if (window.scrollY >= 600) map.classList.remove('active')
-    if (window.scrollY === 0) {
-        heading.style.display = 'flex'
-    } else if (window.scrollY <= 800) {
-        heading.style.display = 'none'
-    } else {
-        heading.style.display = 'flex'
+
+if (width > 740)
+    document.onscroll = function () {
+        if (window.scrollY >= 3300) count()
+        if (window.scrollY >= 600) map.classList.remove('active')
+        if (window.scrollY === 0) {
+            heading.style.display = 'flex'
+        } else if (window.scrollY <= 800) {
+            heading.style.display = 'none'
+        } else {
+            heading.style.display = 'flex'
+        }
+    }
+
+if (width < 739) {
+    document.onscroll = function () {
+        if (window.scrollY >= 3300) count()
     }
 }

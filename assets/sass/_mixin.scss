@@ -1,1 +1,11 @@
-$red: red;
+@mixin maxWidth($breakpoint) {
+    @media screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin minWidth($breakpoint) {
+    @media screen and (min-width: $breakpoint) {
+        @content;
+    }
+}

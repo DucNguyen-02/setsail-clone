@@ -49,3 +49,11 @@
 .team-item:hover .team-detail {
     transform: translateY(0);
 }
+
+@include maxWidth(739px) {
+    .team {
+        &-img {
+            width: 100%;
+        }
+    }
+}

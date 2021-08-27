@@ -77,3 +77,27 @@
         transform: translate(-50%, -50%);
     }
 }
+
+@include maxWidth(739px) {
+    .slider {
+        &-title {
+            font-size: 34px;
+        }
+
+        &-desc {
+            font-size: 15px;
+            width: 90%;
+        }
+
+        & img {
+            max-width: unset;
+        }
+
+        &-btn {
+            &-left,
+            &-right {
+                display: none;
+            }
+        }
+    }
+}

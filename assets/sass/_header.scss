@@ -165,3 +165,17 @@
     gap: 80px;
     padding: 0 100px 40px;
 }
+
+@include maxWidth(739px) {
+    .header {
+        background-color: $primaryColor;
+        justify-content: center;
+        &-list,
+        &-navList {
+            display: none;
+        }
+
+        &-logo {
+        }
+    }
+}
