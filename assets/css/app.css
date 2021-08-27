@@ -118,8 +118,8 @@ body {
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  background-color: red;
   z-index: 19;
-  background-color: #fff;
   left: 0;
   right: 0;
   top: 0;
