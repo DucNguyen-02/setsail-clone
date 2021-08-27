@@ -1,0 +1,51 @@
+.team {
+    &-img {
+        width: 337px;
+    }
+
+    &-list {
+        display: flex;
+    }
+
+    &-item {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &-detail {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: center;
+        background-color: $primaryColor;
+        padding: 20px 10px;
+        color: $whileColor;
+        transform: translateY(100%);
+        transition: transform 0.3s linear;
+    }
+
+    &-name {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    &-desc {
+        line-height: 1.8;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+    &-icon {
+        margin: 0 10px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: filter 0.2s linear;
+    }
+
+    &-icon:hover {
+        filter: brightness(80%);
+    }
+}
+
+.team-item:hover .team-detail {
+    transform: translateY(0);
+}

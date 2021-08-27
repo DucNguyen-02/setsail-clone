@@ -1,0 +1,85 @@
+.footer {
+    padding-top: 100px;
+    background-color: #212121;
+    &-row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin-bottom: 90px;
+    }
+
+    &-logo {
+        margin-bottom: 30px;
+    }
+
+    &-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-desc {
+        font-size: 17px;
+        color: #a9a9a9;
+        margin-bottom: 30px;
+    }
+
+    &-email,
+    &-phone,
+    &-place {
+        font-size: 14px;
+        color: $whileColor;
+        margin-bottom: 10px;
+        transition: 0.2s linear;
+    }
+
+    &-header {
+        font-size: 18px;
+        color: $whileColor;
+        margin-bottom: 30px;
+    }
+
+    &-wrapper {
+        margin-bottom: 30px;
+    }
+
+    &-sub {
+        font-size: 14px;
+        color: #a9a9a9;
+    }
+
+    &-location {
+        color: #a9a9a9;
+        margin-bottom: 10px;
+        display: block;
+        transition: 0.2s linear;
+    }
+
+    &-date {
+        color: $whileColor;
+        transition: 0.2s linear;
+    }
+}
+
+.footer a:hover {
+    color: $primaryColor;
+}
+
+.copyright {
+    display: block;
+    padding: 0 0 30px;
+    display: flex;
+    justify-content: center;
+
+    & p {
+        color: #a9a9a9;
+    }
+
+    & a {
+        color: $whileColor;
+        transition: 0.2s linear;
+    }
+
+    & a:hover {
+        color: $primaryColor;
+    }
+}

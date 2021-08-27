@@ -1,0 +1,69 @@
+.review {
+    background-image: url('https://setsail.qodeinteractive.com/wp-content/uploads/2018/09/skiing-parallax-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-position: center;
+    width: 100%;
+    padding: 120px 0;
+    text-align: center;
+
+    &-header {
+        margin-bottom: 36px;
+    }
+
+    &-title {
+        color: $whileColor;
+        margin-bottom: 10px;
+    }
+
+    &-desc {
+        width: 40%;
+        color: $whileColor;
+        margin: 0 auto;
+    }
+
+    &-list {
+    }
+
+    &-item {
+        display: flex !important;
+        text-align: left;
+        background-color: $whileColor;
+        padding: 40px;
+        border-radius: 6px;
+        margin: 0 10px;
+        width: 423px;
+    }
+
+    &-img {
+        padding-right: 20px;
+        object-fit: contain;
+    }
+
+    &-country {
+        margin-bottom: 10px;
+        transition: all 0.2s linear;
+        color: $headerColor;
+        font-size: 20px;
+        font-weight: 600;
+        display: block;
+    }
+
+    &-country:hover {
+        color: $primaryColor;
+    }
+
+    &-rate {
+        margin-bottom: 20px;
+        color: $primaryColor;
+    }
+
+    &-comment {
+        margin-bottom: 25px;
+        line-height: 1.8;
+        font-weight: 500;
+        color: #999;
+        text-align: justify;
+    }
+}

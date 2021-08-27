@@ -1,0 +1,43 @@
+.video {
+    padding: 130px 0;
+    text-align: center;
+
+    &-img img {
+        margin: 0 auto;
+    }
+
+    &-title {
+        margin-bottom: 40px;
+    }
+
+    &-content {
+        width: 66.667%;
+        margin: 0 auto;
+        margin-bottom: 36px;
+    }
+
+    &-desc {
+        width: 100%;
+        line-height: 30px;
+    }
+
+    &-img {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    &-btn {
+        padding: 20px 80px;
+        background-color: $primaryColor;
+        color: $whileColor;
+        outline: none;
+        border: none;
+        border-radius: 4px;
+        font-weight: 600;
+        transition: all 0.2s linear;
+    }
+
+    &-btn:hover {
+        filter: brightness(80%);
+    }
+}

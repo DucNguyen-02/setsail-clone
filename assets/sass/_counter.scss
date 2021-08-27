@@ -1,0 +1,27 @@
+.counter {
+    width: 100%;
+    background-color: $primaryColor;
+    text-align: center;
+    padding: 80px;
+    color: $whileColor;
+    filter: brightness(90%);
+    &-list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-number {
+        font-size: 70px;
+        font-weight: 600;
+    }
+
+    &-title {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}

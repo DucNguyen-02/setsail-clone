@@ -1,0 +1,92 @@
+.map {
+    max-width: 460px;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 2;
+    text-align: center;
+    padding: 60px 30px 120px;
+    box-shadow: 0 1px 3.125rem 0 rgba(0, 0, 0, 0.2);
+    transition: linear 0.5s;
+    overflow: scroll;
+
+    &-exit {
+        color: #000;
+    }
+
+    &-logo {
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+    &-sub-logo {
+        display: inline-block;
+        margin-bottom: 50px;
+    }
+
+    &-img {
+        margin-bottom: 20px;
+    }
+
+    &-desc {
+        font-size: 15px;
+        line-height: 1.5;
+        color: #666;
+        margin-bottom: 50px;
+    }
+
+    &-find {
+        font-size: 20px;
+    }
+
+    &-search {
+        display: flex;
+        justify-content: center;
+        margin: 40px 0;
+    }
+
+    &-input {
+        font-size: 15px;
+        border: none;
+        background-color: #ccc;
+        padding: 20px;
+    }
+
+    &-btn {
+        font-size: 15px;
+        border: none;
+        background-color: $primaryColor;
+        padding: 20px;
+        color: #fff;
+    }
+
+    &-contact {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+}
+
+.map::-webkit-scrollbar {
+    display: none;
+}
+
+.map.active {
+    right: 0;
+}
+
+.map-btn:hover {
+    cursor: pointer;
+    filter: brightness(90%);
+}
+
+.exit {
+    z-index: 5;
+    color: #fff;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
